@@ -9,7 +9,7 @@ const Todo = ({ todo, index, completeTodo}) => {
           className="todo"
           style={{ textDecoration: todo.isCompleted ? "line-through" : "" }}
         >
-          {todo.text}
+          {todo.task}
   
           <div>
             <button onClick={() => completeTodo(index)}>Complete</button>

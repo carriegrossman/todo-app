@@ -7,17 +7,17 @@ import Todo from './Todo';
 const App =() =>{
   const [todos, setTodos] = useState([
     {
-      text: "Make Todo List",
+      task: "Make Todo List",
       isCompleted: true
     },
   ]);
 
-  const addTodo = text => {
-    const newTodos = [...todos, { text }];
+  const addTodo = (task) => {
+    const newTodos = [...todos, { task }];
     setTodos(newTodos);
   };
 
-  const completeTodo = index => {
+  const completeTodo = (index) => {
     const newTodos = [...todos];
     newTodos[index].isCompleted = true;
     setTodos(newTodos);
